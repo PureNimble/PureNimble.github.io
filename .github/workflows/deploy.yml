@@ -41,6 +41,8 @@ jobs:
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Move 404 page to dist
+        run: mv 404.html dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
