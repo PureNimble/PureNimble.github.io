@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Team, PageNotFound } from './pages';;
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -14,12 +14,12 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Team toggleDarkMode={toggleDarkMode} />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
