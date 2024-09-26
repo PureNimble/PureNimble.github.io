@@ -1,7 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function PageNotFound() {
+function PageNotFound(darkmode) {
+    if (darkmode === 'dark') {
+        console.log('Dark mode is enabled');
+    } else {
+        console.log('Dark mode is disabled');
+    }
     const navigate = useNavigate();
     const goBack = () => navigate(-1);
     const goHome = () => navigate('/');
