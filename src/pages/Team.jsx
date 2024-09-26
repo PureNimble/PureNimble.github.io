@@ -1,21 +1,20 @@
 import React from 'react';
 import { teamMembers } from '../constants';
-import { ProfileCard, DarkModeToggleButton } from '../components';
+import { ProfileCard } from '../components';
 import "@theme-toggles/react/css/Classic.css";
 
-const Team = ({ toggleDarkMode }) => {
+const Team = () => {
     return (
         <div>
-            <section className="bg-bkg">
-                <DarkModeToggleButton toggleDarkMode={toggleDarkMode} />
+            <section className="bg-white dark:bg-gray-900">
                 <div className="container px-6 py-10 mx-auto">
                     <div className="xl:flex xl:items-center xl:-mx-4">
                         <div className="xl:w-1/2 xl:mx-4">
-                            <h1 className="text-2xl font-semibold text-accent-1 capitalize lg:text-3xl">
+                            <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
                                 Our Team
                             </h1>
 
-                            <p className="max-w-2xl mt-4 text-accent-2">
+                            <p className="max-w-2xl mt-4 text-gray-500 dark:text-gray-300">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
                             </p>
                         </div>

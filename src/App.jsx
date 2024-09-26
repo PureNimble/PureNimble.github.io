@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Team, PageNotFound } from './pages';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Navbar } from './components';
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+    setDarkMode(!darkMode);
   };
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Team toggleDarkMode={toggleDarkMode} />} />
-        <Route path="*" element={<PageNotFound darkmode={theme} />} />
-      </Routes>
-    </BrowserRouter>
+    <div className={darkMode ? 'dark' : ''}>
+      <BrowserRouter>
+        <Navbar toggleDarkMode={toggleDarkMode} />
+        <Routes>
+          <Route path="/" element={<Team />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
