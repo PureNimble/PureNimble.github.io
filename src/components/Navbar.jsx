@@ -4,10 +4,10 @@ import { FaHome } from 'react-icons/fa';
 import DarkModeToggleButton from './DarkModeToggleButton';
 import { RiGitRepositoryFill } from "react-icons/ri";
 
-const Navbar = ({ toggleDarkMode }) => {
+const Navbar = ({ darkMode, toggleDarkMode }) => {
     return (
         <header className='header bg-bkg-light dark:bg-bkg-dark flex justify-between items-center p-4'>
-            <DarkModeToggleButton toggleDarkMode={toggleDarkMode} />
+            <DarkModeToggleButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <NavLink to='/'>
                 <FaHome className='text-4xl text-content-dark dark:text-content-light' />
             </NavLink>

@@ -1,21 +1,15 @@
 import "@theme-toggles/react/css/Around.css";
 import { Around } from "@theme-toggles/react";
-import { useEffect, useRef } from "react";
+import React from "react";
 
-const DarkModeToggleButton = ({ toggleDarkMode }) => {
-    const buttonRef = useRef(null);
-
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            // Ensure the button exists before clicking it
-            if (buttonRef.current) {
-                buttonRef.current.click();
-            }
-        }
-    }, []);
+const DarkModeToggleButton = ({ darkMode, toggleDarkMode }) => {
 
     return (
-        <Around className='text-4xl text-amber-400 dark:text-content-light' ref={buttonRef} onToggle={toggleDarkMode} />
+        <Around
+            className='text-4xl text-amber-400 dark:text-content-light'
+            toggled={darkMode}
+            onToggle={toggleDarkMode}
+        />
     );
 }
 

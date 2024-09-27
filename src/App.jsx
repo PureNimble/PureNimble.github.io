@@ -40,7 +40,7 @@ function AppContent({ darkMode, toggleDarkMode }) {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className='bg-bkg-light dark:bg-bkg-dark min-h-screen flex flex-col'>
-        {shouldShowNavbar && <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />}
+        {shouldShowNavbar && <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
         <main className='flex-grow'>
           <Routes>
             <Route path="/" element={<Team />} />

@@ -17,7 +17,7 @@ const Team = () => {
                         </p>
                     </header>
                     <div className="grid gap-8 mt-8 lg:grid-cols-3">
-                        {teamMembers.map(({ name, role, image, github, linkedin }, index) => (
+                        {teamMembers.map(({ name, role, image, github, linkedin, portfolio}, index) => (
                             <ProfileCard
                                 key={index}
                                 name={name}
@@ -25,6 +25,7 @@ const Team = () => {
                                 image={image}
                                 github={github}
                                 linkedin={linkedin}
+                                portfolio={portfolio}
                             />
                         ))}
                     </div>
