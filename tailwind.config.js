@@ -5,7 +5,26 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bkg: {
+          light: "hsl(200, 20%, 99%)",
+          dark: "hsl(200, 10%, 25%)",
+        },
+        content: {
+          light: "hsl(200, 20%, 92%)",
+          dark: "hsl(200, 5%, 35%)",
+        },
+        accent1: {
+          light: "hsl(200, 100%, 10%)",
+          dark: "hsl(200, 15%, 75%)",
+        },
+        accent2: {
+          light: "hsl(200, 30%, 30%)",
+          dark: "hsl(200, 10%, 61%)",
+        },
+      },
+    },
   },
   plugins: [],
 }

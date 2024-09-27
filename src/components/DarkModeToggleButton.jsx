@@ -15,7 +15,7 @@ const DarkModeToggleButton = ({ toggleDarkMode }) => {
     }, []);
 
     return (
-        <Around className='text-4xl text-amber-400 dark:text-gray-500' ref={buttonRef} onToggle={toggleDarkMode} />
+        <Around className='text-4xl text-amber-400 dark:text-content-light' ref={buttonRef} onToggle={toggleDarkMode} />
     );
 }
 
