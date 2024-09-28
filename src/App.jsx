@@ -29,7 +29,8 @@ function AppContent({ darkMode, toggleDarkMode }) {
   const location = useLocation();
 
   const routesWithNavbar = [
-    { path: '/', path: '/projects' },
+    { path: '/' },
+    { path: '/projects' },
   ];
 
   const shouldShowNavbar = routesWithNavbar.some(route =>
@@ -38,7 +39,7 @@ function AppContent({ darkMode, toggleDarkMode }) {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className='bg-bkg-light dark:bg-bkg-dark min-h-screen flex flex-col'>
+      <div className='bg-bkg-light dark:bg-bkg-dark min-h-screen flex flex-col transition-colors duration-300'>
         {shouldShowNavbar && <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
         <main className='flex-grow'>
           <Routes>

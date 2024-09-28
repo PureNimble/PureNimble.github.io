@@ -29,35 +29,32 @@ export const teamMembers = [
 export const projects = [
     {
         title: 'Lapr 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
-        image: 'https://via.placeholder.com/150',
-        github: 'https://github.com',
-
+        description: 'This repository contains relevant didactic artifacts for the integrative project to be developed in the first semester of the 2022-2023 academic year in the Bachelor\'s Degree in Engineering (LEI) at the Instituto Superior de Engenharia do Porto (ISEP).',
+        url: 'https://github.com/PureNimble/ISEP-LAPR1',
+        date: '2022-2023'
     },
     {
         title: 'Lapr 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
-        image: 'https://via.placeholder.com/150',
-        github: 'https://github.com',
-
+        description: 'This repository contains relevant didactic artifacts for the integrative project to be developed in the second semester of the 2022-2023 academic year in the Bachelor\'s Degree in Computer Engineering (LEI) at the Instituto Superior de Engenharia do Porto (ISEP).',
+        url: 'https://github.com/PureNimble/ISEP-LAPR2',
+        date: '2022-2023'
     },
     {
         title: 'Lapr 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
-        image: 'https://via.placeholder.com/150',
-        github: 'https://github.com',
+        description: 'This repository contains relevant didactic artifacts for the integrative project to be developed in the first semester of the 2023-2024 academic year in the Bachelor\'s Degree in Computer Engineering (LEI) at the Instituto Superior de Engenharia do Porto (ISEP).',
+        url: 'https://github.com/PureNimble/ISEP-LAPR3',
+        date: '2023-2024'
     },
     {
         title: 'Lapr 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
-        image: 'https://via.placeholder.com/150',
-        github: 'https://github.com',
+        description: 'As part of the LEI (Licenciatura Engenharia Informática) degree\'s integrative project at ISEP (Instituto Superior de Engenharia do Porto) for the 2023/2024 academic year, we are embarking on a project to develop a Minimum Viable Product (MVP) for Jobs4U aimed at automating their talent acquisition process.',
+        url: 'https://github.com/PureNimble/ISEP-LAPR4',
+        date: '2023-2024'
     },
     {
         title: 'HairDrop',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
-        image: 'https://via.placeholder.com/150',
-        github: 'https://github.com',
+        description: 'N/A',
+        url: 'https://github.com/PureNimble',
+        date: 'N/A'
     }
-
 ];

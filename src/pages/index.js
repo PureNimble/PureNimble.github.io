@@ -1,9 +1,9 @@
 import Team from "./Team";
-import PageNotFound from "./PageNotFound";
 import Projects from "./Projects";
+import PageNotFound from "./PageNotFound";
 
 export {
     Team,
-    PageNotFound,
-    Projects
+    Projects,
+    PageNotFound
 }
