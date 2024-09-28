@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation, matchPath } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Team from './pages/Team';
-import PageNotFound from './pages/PageNotFound';
+import { Navbar } from './components';
+import { Projects, Team, PageNotFound } from './pages';
 import "@theme-toggles/react/css/Classic.css";
 
 function App() {
@@ -30,7 +29,7 @@ function AppContent({ darkMode, toggleDarkMode }) {
   const location = useLocation();
 
   const routesWithNavbar = [
-    { path: '/' },
+    { path: '/', path: '/projects' },
   ];
 
   const shouldShowNavbar = routesWithNavbar.some(route =>
@@ -43,6 +42,7 @@ function AppContent({ darkMode, toggleDarkMode }) {
         {shouldShowNavbar && <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
         <main className='flex-grow'>
           <Routes>
+            <Route path="/projects" element={<Projects />} />
             <Route path="/" element={<Team />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

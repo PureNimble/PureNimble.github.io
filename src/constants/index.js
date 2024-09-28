@@ -25,3 +25,39 @@ export const teamMembers = [
         portfolio: 'https://joaopinto15.github.io/'
     },
 ];
+
+export const projects = [
+    {
+        title: 'Lapr 1',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
+        image: 'https://via.placeholder.com/150',
+        github: 'https://github.com',
+
+    },
+    {
+        title: 'Lapr 2',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
+        image: 'https://via.placeholder.com/150',
+        github: 'https://github.com',
+
+    },
+    {
+        title: 'Lapr 3',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
+        image: 'https://via.placeholder.com/150',
+        github: 'https://github.com',
+    },
+    {
+        title: 'Lapr 4',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
+        image: 'https://via.placeholder.com/150',
+        github: 'https://github.com',
+    },
+    {
+        title: 'HairDrop',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.',
+        image: 'https://via.placeholder.com/150',
+        github: 'https://github.com',
+    }
+
+];
