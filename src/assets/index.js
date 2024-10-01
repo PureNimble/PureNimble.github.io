@@ -1,5 +1,7 @@
-import hairdrop from './HairDrop-Logo-Dark.svg';
+import hairdropLight from './HairDrop-Logo-LightMode.svg';
+import hairdropDark from './HairDrop-Logo-DarkMode.svg';
 
 export {
-    hairdrop
+    hairdropLight,
+    hairdropDark
 }

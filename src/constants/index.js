@@ -1,4 +1,4 @@
-import { hairdrop } from '../assets';
+import { hairdropLight, hairdropDark } from '../assets';
 
 export const teamMembers = [
     {
@@ -58,6 +58,10 @@ export const projects = [
         description: 'N/A',
         url: 'https://github.com/PureNimble',
         date: 'N/A',
-        logo: hairdrop
+        logo: {
+            dark: hairdropDark,
+            light: hairdropLight,
+        }
+
     }
 ];
