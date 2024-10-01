@@ -7,8 +7,8 @@ const ProjectCard = ({ title, description, url, date, logo }) => {
             <div className="bg-content-light dark:bg-content-dark rounded-lg shadow-lg overflow-hidden w-full transition-colors duration-300 hover:bg-gray-100 dark:hover:bg-gray-500">
                 {
                     logo ?
-                        (<><img src={logo.dark} alt="Project Logo" className="w-full h-64 scale-75 dark:hidden " />
-                            <img src={logo.light} alt="Project Logo" className="w-full h-64 scale-75 hidden dark:block " /></>
+                        (<><img src={logo.dark} alt="Project Logo" className="w-full h-64 scale-75 dark:hidden transition-transform duration-300 group-hover:scale-100 " />
+                            <img src={logo.light} alt="Project Logo" className="w-full h-64 scale-75 hidden dark:block transition-transform duration-300 group-hover:scale-100 " /></>
                         )
                         :
                         (<FaGithubAlt className='w-full h-64 scale-75 text-bkg-dark dark:text-bkg-light transition-transform duration-300 group-hover:scale-100' />)
