@@ -6,7 +6,7 @@ import { RiGitRepositoryFill } from "react-icons/ri";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
     return (
-        <header className='header bg-bkg-light dark:bg-bkg-dark flex justify-between items-center p-4 transition-colors duration-300'>
+        <header className='header bg-transparent flex justify-between items-center p-4 transition-colors duration-300'>
             <DarkModeToggleButton darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <NavLink to='/'>
                 <FaHome className='text-4xl text-content-dark dark:text-content-light' />

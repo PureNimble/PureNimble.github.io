@@ -55,9 +55,9 @@ export const projects = [
     },
     {
         title: 'HairDrop',
-        description: 'N/A',
-        url: 'https://github.com/PureNimble',
-        date: 'N/A',
+        description: 'This project is a service designed to seamlessly connect users with hair salons, barbershops, and independent hairstylists, offering a modern, on-demand solution for hair care.',
+        url: 'https://github.com/PureNimble/HairDrop',
+        date: '2024',
         logo: {
             dark: hairdropDark,
             light: hairdropLight,

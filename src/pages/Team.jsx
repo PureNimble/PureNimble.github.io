@@ -13,7 +13,7 @@ const Team = () => {
                             Our Team
                         </h1>
                         <p className="max-w-2xl mt-4 mx-auto text-accent2-light dark:text-accent2-dark transition-colors duration-300">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.
+                            Meet our team of dedicated professionals. Connect with us through the profiles below.
                         </p>
                     </header>
                     <div className="grid gap-8 mt-8 lg:grid-cols-3">
