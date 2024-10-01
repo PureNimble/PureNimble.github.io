@@ -1,11 +1,16 @@
 import pureNimble from '../assets/pureNimbleLogo.png';
 import { FaGithubAlt } from "react-icons/fa";
 
-const ProjectCard = ({ title, description, url, date }) => {
+const ProjectCard = ({ title, description, url, date, logo }) => {
     return (
         <a href={url} target="_blank" rel="noopener noreferrer" className="group">
             <div className="bg-content-light dark:bg-content-dark rounded-lg shadow-lg overflow-hidden w-full transition-colors duration-300 hover:bg-gray-100 dark:hover:bg-gray-500">
-                <FaGithubAlt className='w-full h-64 scale-75 text-bkg-dark dark:text-bkg-light transition-transform duration-300 group-hover:scale-100' />
+                {
+                    logo ?
+                        (<img src={logo} alt="Project Logo" className="w-full h-64 scale-75 " />)
+                        :
+                        (<FaGithubAlt className='w-full h-64 scale-75 text-bkg-dark dark:text-bkg-light transition-transform duration-300 group-hover:scale-100' />)
+                }
                 <div className="p-6">
                     <h2 className="text-2xl font-bold text-accent1-light dark:text-accent1-dark mb-2 transition-colors duration-300 group-hover:text-content-dark dark:group-hover:text-content-light">
                         {title}

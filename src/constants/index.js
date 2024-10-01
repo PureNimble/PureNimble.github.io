@@ -1,3 +1,5 @@
+import { hairdrop } from '../assets';
+
 export const teamMembers = [
     {
         name: 'Vasco Sousa',
@@ -55,6 +57,7 @@ export const projects = [
         title: 'HairDrop',
         description: 'N/A',
         url: 'https://github.com/PureNimble',
-        date: 'N/A'
+        date: 'N/A',
+        logo: hairdrop
     }
 ];

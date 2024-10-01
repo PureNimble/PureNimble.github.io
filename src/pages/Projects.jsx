@@ -16,13 +16,14 @@ function Projects() {
                         </p>
                     </header>
                     <div className="grid gap-8 gap-x-8 mt-8 lg:grid-cols-3 lg:px-4">
-                        {projects.map(({ title, description, url, date }, index) => (
+                        {projects.map(({ title, description, url, date, logo }, index) => (
                             <ProjectCard
                                 key={index}
                                 title={title}
                                 description={description}
                                 url={url}
                                 date={date}
+                                logo={logo}
                             />
                         ))}
                     </div>
