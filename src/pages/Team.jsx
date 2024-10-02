@@ -3,11 +3,11 @@ import { teamMembers } from '../constants';
 import { ProfileCard } from '../components';
 import "@theme-toggles/react/css/Classic.css";
 
-const Team = () => {
+function Team() {
     return (
         <>
             <main>
-                <section className="container px-6 py-10 mx-auto">
+                <section className="container px-16 py-10 mx-auto">
                     <header className="text-center">
                         <h1 className="text-2xl font-semibold text-accent1-light capitalize lg:text-3xl dark:text-accent1-dark transition-colors duration-300">
                             Our Team

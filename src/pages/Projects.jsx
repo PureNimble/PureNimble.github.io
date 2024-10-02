@@ -6,7 +6,7 @@ function Projects() {
     return (
         <>
             <main>
-                <section className="container px-4 py-10 mx-auto max-w-7xl">
+                <section className="container px-16 py-10 mx-auto max-w-7xl">
                     <header className="text-center">
                         <h1 className="text-2xl font-semibold text-accent1-light capitalize lg:text-3xl dark:text-accent1-dark transition-colors duration-300">
                             Our Projects
