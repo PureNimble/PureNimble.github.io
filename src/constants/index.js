@@ -1,5 +1,4 @@
-import { hairdropLight, hairdropDark, pureNimble } from '../assets';
-
+import { hairdropLight, hairdropDark, pureNimble, jobs4uDark, jobs4uLight } from '../assets';
 
 export const teamMembers = [
     {
@@ -52,7 +51,11 @@ export const projects = [
         title: 'Lapr 4',
         description: 'As part of the LEI (Licenciatura Engenharia Informática) degree\'s integrative project at ISEP (Instituto Superior de Engenharia do Porto) for the 2023/2024 academic year, we are embarking on a project to develop a Minimum Viable Product (MVP) for Jobs4U aimed at automating their talent acquisition process.',
         source: 'https://github.com/PureNimble/ISEP-LAPR4',
-        date: '2023-2024'
+        date: '2023-2024',
+        logo: {
+            dark: jobs4uLight,
+            light: jobs4uDark,
+        }
     },
     {
         title: 'HairDrop',
