@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/line-clamp": "^0.4.4",
     "@heroicons/react": "^2.1.5",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "@theme-toggles/react": "^4.1.0",
     "purenimble-github-io": "file:",
     "react": "^18.3.1",

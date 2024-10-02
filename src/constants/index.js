@@ -1,4 +1,5 @@
-import { hairdropLight, hairdropDark } from '../assets';
+import { hairdropLight, hairdropDark, pureNimble } from '../assets';
+
 
 export const teamMembers = [
     {
@@ -61,8 +62,14 @@ export const projects = [
         date: '2024',
         logo: {
             dark: hairdropDark,
-            light: hairdropLight,
+            light: hairdropLight
         }
 
     }
 ];
+
+export const organization = {
+    name: 'PureNimble',
+    logo: pureNimble,
+    description: 'PureNimble is a space where we share school projects and personal work that could be useful to others. Our team consists of students, and we aim to provide simple, practical resources based on what we’ve learned. We’re not trying to stand out, just offering what we’ve created in case it helps someone else.'
+};

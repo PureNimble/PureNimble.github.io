@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation, matchPath } from 'react-router-dom';
-import { Navbar } from './components';
-import { Projects, Team, PageNotFound } from './pages';
+import { Navbar, Footer } from './components';
+import { Projects, Team, PageNotFound, Organization } from './pages';
 import "@theme-toggles/react/css/Classic.css";
 
 function App() {
@@ -30,24 +30,27 @@ function AppContent({ darkMode, toggleDarkMode }) {
 
   const routesWithNavbar = [
     { path: '/' },
-    { path: '/projects' },
+    { path: '/team' },
+    { path: '/projects' }
   ];
 
-  const shouldShowNavbar = routesWithNavbar.some(route =>
+  const shouldShow = routesWithNavbar.some(route =>
     matchPath(route.path, location.pathname)
   );
 
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className='bg-bkg-light dark:bg-bkg-dark min-h-screen flex flex-col transition-colors duration-300'>
-        {shouldShowNavbar && <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
+        {shouldShow && <Navbar />}
         <main className='flex-grow'>
           <Routes>
             <Route path="/projects" element={<Projects />} />
-            <Route path="/" element={<Team />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/" element={<Organization />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>
+        {shouldShow && <Footer darkMode={darkMode} toggleDarkMode={toggleDarkMode} />}
       </div>
     </div>
   );
