@@ -48,7 +48,7 @@ export const projects = [
         date: '2023-2024'
     },
     {
-        title: 'Lapr 4',
+        title: 'Jobs4u (Lapr 4)',
         description: 'As part of the LEI (Licenciatura Engenharia Informática) degree\'s integrative project at ISEP (Instituto Superior de Engenharia do Porto) for the 2023/2024 academic year, we are embarking on a project to develop a Minimum Viable Product (MVP) for Jobs4U aimed at automating their talent acquisition process.',
         source: 'https://github.com/PureNimble/ISEP-LAPR4',
         date: '2023-2024',
