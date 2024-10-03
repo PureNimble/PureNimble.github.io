@@ -7,6 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        customGray: '#cfcfcf',
+        customGrayDark: '#4A4A4A',
+        offWhite: '#F0F0F0',
         bkg: {
           light: "hsl(200, 20%, 99%)",
           dark: "hsl(200, 10%, 25%)"
