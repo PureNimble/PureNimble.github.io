@@ -15,8 +15,11 @@ function Organization() {
                             {organization.description}
                         </p>
                     </header>
-                    <div className="flex mt-8">
-                        <OrganizationCard name={organization.name} logo={organization.logo} />
+                    <div className="flex justify-center mt-8 lg:px-4 w-full">
+                        <OrganizationCard
+                            name={organization.name}
+                            logo={organization.logo}
+                        />
                     </div>
                 </section>
             </main >

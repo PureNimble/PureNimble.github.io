@@ -74,5 +74,5 @@ export const projects = [
 export const organization = {
     name: 'PureNimble',
     logo: pureNimble,
-    description: 'PureNimble is a space where we share school projects and personal work that could be useful to others. Our team consists of students, and we aim to provide simple, practical resources based on what we’ve learned. We’re not trying to stand out, just offering what we’ve created in case it helps someone else.'
+    description: 'PureNimble is a space where we share university projects and personal work that could be useful to others. Our team consists of students, and we aim to provide simple, practical resources based on what we’ve learned. We’re not trying to stand out, just offering what we’ve created in case it helps someone else.'
 };

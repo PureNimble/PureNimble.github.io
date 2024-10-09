@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
-import pureNimble from '../assets/pureNimbleLogo.png'; // Adjust the import path as needed
+import pureNimble from '../assets/pureNimbleLogo.png';
 
 const ProjectCard = ({ title, description, source, live, date, logo }) => {
     return (
@@ -49,8 +49,12 @@ const ProjectCard = ({ title, description, source, live, date, logo }) => {
             </div>
             <div className="pb-6 pr-6 pl-6 bg-transparent flex justify-between items-center">
                 <div className="flex items-center">
-                    <img src={pureNimble} alt="Avatar" className="w-8 h-8 rounded-full mr-2 object-cover transition-transform duration-300" />
-                    <span className="text-accent1-light dark:text-accent1-dark font-semibold transition-colors duration-300 group-hover:text-content-dark dark:group-hover:text-content-light">
+                    <img
+                        src={pureNimble}
+                        alt="Avatar"
+                        className="w-8 h-8 rounded-full mr-2 object-cover transition-transform duration-300"
+                    />
+                    <span className="text-accent1-light dark:text-accent1-dark font-semibold transition-colors duration-300 group-hover:text-content-dark dark:group-hover:text-content-light truncate">
                         PureNimble
                     </span>
                 </div>
@@ -58,6 +62,7 @@ const ProjectCard = ({ title, description, source, live, date, logo }) => {
                     {date}
                 </span>
             </div>
+
         </div>
     );
 };

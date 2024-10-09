@@ -12,7 +12,7 @@ function Projects() {
                             Our Projects
                         </h1>
                         <p className="max-w-2xl mt-4 mx-auto text-accent2-light dark:text-accent2-dark transition-colors duration-300">
-                            This page showcases our organization's key projects, including school initiatives and more. It serves as a record of our efforts and is shared to inspire and inform others. Explore to learn about our work and impact!
+                            This page showcases our organization's key projects, including university initiatives and more. It serves as a record of our efforts and is shared to inspire and inform others. Explore to learn about our work and impact!
                         </p>
                     </header>
                     <div className="grid gap-8 gap-x-8 mt-8 lg:grid-cols-3 lg:px-4">
