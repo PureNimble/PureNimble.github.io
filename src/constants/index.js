@@ -9,7 +9,7 @@ import {
 export const teamMembers = [
   {
     name: "Vasco Sousa",
-    role: "Developer",
+    role: "CTO",
     image: "https://github.com/vscosousa.png",
     github: "https://github.com/vscosousa",
     linkedin: "https://linkedin.com/in/vscosousa/",
@@ -17,7 +17,7 @@ export const teamMembers = [
   },
   {
     name: "Rafael Araújo",
-    role: "Developer",
+    role: "Founder",
     image: "https://github.com/ReyFow.png",
     github: "https://github.com/ReyFow",
     linkedin: "https://linkedin.com/in/rafaraujo589/",
@@ -25,7 +25,7 @@ export const teamMembers = [
   },
   {
     name: "João Pinto",
-    role: "Developer",
+    role: "CEO",
     image: "https://github.com/joaopinto15.png",
     github: "https://github.com/joaopinto15",
     linkedin: "https://linkedin.com/in/joaopinto15/",
@@ -33,11 +33,11 @@ export const teamMembers = [
   },
   {
     name: "João Pereira",
-    role: "Developer",
+    role: "Trainee",
     image: "https://github.com/joaohcpereiraa.png",
     github: "https://github.com/joaohcpereiraa",
     linkedin: "https://linkedin.com/in/jo%C3%A3o-pereira-9a7296280/",
-    portfolio: "https://joaohcpereiraa.github.io/",
+    portfolio: "https://portfolio-sigma-lilac-72.vercel.app/",
   },
 ];
 
