@@ -16,7 +16,7 @@ function Team() {
                             Meet our team of dedicated professionals. Connect with us through the profiles below.
                         </p>
                     </header>
-                    <div className="grid gap-8 mt-8 lg:grid-cols-3">
+                    <div className="grid gap-8 mt-8 max-w-3xl mx-auto sm:grid-cols-2">
                         {teamMembers.map(({ name, role, image, github, linkedin, portfolio }, index) => (
                             <ProfileCard
                                 key={index}
